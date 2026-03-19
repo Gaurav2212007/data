@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0f0f1a"
+    android:padding="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💧 Data Bottle"
+            android:textSize="32sp"
+            android:textColor="#00ff88"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Live mobile data widget"
+            android:textSize="14sp"
+            android:textColor="#88aaaaaa"
+            android:gravity="center"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- Step 1: Overlay permission -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Setup — Grant Permissions"
+            android:textSize="13sp"
+            android:textColor="#88ffffff"
+            android:textAllCaps="true"
+            android:letterSpacing="0.1"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btn_overlay_perm"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="1. Grant Draw Over Apps"
+            android:textColor="#ffffff"
+            android:backgroundTint="#1e2a3a"
+            android:layout_marginBottom="10dp"
+            android:textSize="15sp"
+            style="?attr/materialButtonStyle"/>
+
+        <Button
+            android:id="@+id/btn_usage_perm"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="2. Grant Usage Access"
+            android:textColor="#ffffff"
+            android:backgroundTint="#1e2a3a"
+            android:layout_marginBottom="24dp"
+            android:textSize="15sp"
+            style="?attr/materialButtonStyle"/>
+
+        <!-- Plan size -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Monthly Data Plan (GB)"
+            android:textSize="13sp"
+            android:textColor="#88ffffff"
+            android:textAllCaps="true"
+            android:letterSpacing="0.1"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/et_plan_gb"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="e.g. 5"
+            android:hintTextColor="#445555"
+            android:inputType="numberDecimal"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:background="@drawable/bg_input"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Start/Stop -->
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="▶  Start Bottle Overlay"
+            android:textColor="#0f0f1a"
+            android:backgroundTint="#00ff88"
+            android:layout_marginBottom="10dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            style="?attr/materialButtonStyle"/>
+
+        <Button
+            android:id="@+id/btn_stop"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="⏹  Stop"
+            android:textColor="#ff6666"
+            android:backgroundTint="#2a1a1a"
+            android:layout_marginBottom="20dp"
+            android:textSize="14sp"
+            style="?attr/materialButtonOutlinedStyle"/>
+
+        <!-- Status -->
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Grant permissions above, then tap Start."
+            android:textSize="13sp"
+            android:textColor="#88aaaaaa"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Info box -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_info_card"
+            android:padding="16dp"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How it works"
+                android:textColor="#00cc66"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• A tiny bottle floats on top of all apps (top-right)\n• Water level = your remaining mobile data\n• Green → yellow → red as data runs low\n• Tap the bottle to see full breakdown\n• Drag to reposition anywhere on screen\n• Refreshes every 30 seconds automatically\n• Restarts automatically after reboot"
+                android:textColor="#88cccccc"
+                android:textSize="13sp"
+                android:lineSpacingExtra="4dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
